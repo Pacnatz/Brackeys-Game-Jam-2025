@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|e:\\github_stuff\\brackeys-game-jam-2025\\brackeys game jam 2025\\assets\\nhat\u0027s assets\\scripts\\dragscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|solutionrelative:assets\\nhat\u0027s assets\\scripts\\dragscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|e:\\github_stuff\\brackeys-game-jam-2025\\brackeys game jam 2025\\assets\\nhat\u0027s assets\\scripts\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|solutionrelative:assets\\nhat\u0027s assets\\scripts\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|e:\\github_stuff\\brackeys-game-jam-2025\\brackeys game jam 2025\\assets\\nhat\u0027s assets\\scripts\\item1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|solutionrelative:assets\\nhat\u0027s assets\\scripts\\item1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DragScript.cs",
+              "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\DragScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\DragScript.cs",
+              "ToolTip": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\DragScript.cs",
+              "RelativeToolTip": "Assets\\Nhat\u0027s Assets\\Scripts\\DragScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T18:17:10.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseItem.cs",
+              "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\BaseItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\BaseItem.cs",
+              "ToolTip": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\BaseItem.cs",
+              "RelativeToolTip": "Assets\\Nhat\u0027s Assets\\Scripts\\BaseItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T18:17:02.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Item1.cs",
+              "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\Item1.cs",
+              "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\Item1.cs",
+              "ToolTip": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\Item1.cs",
+              "RelativeToolTip": "Assets\\Nhat\u0027s Assets\\Scripts\\Item1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T18:16:44.091Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
