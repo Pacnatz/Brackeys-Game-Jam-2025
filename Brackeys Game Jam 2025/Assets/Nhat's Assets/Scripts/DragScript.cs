@@ -13,7 +13,7 @@ public class DragScript : MonoBehaviour {
     private float playerSpeed = 5f;
     private float playerAcceleration = 10f;
 
-    private GameObject selectedItem;
+    private BaseItem selectedItem;
     private Vector3 offset;
     private Vector2 worldPos;
 
@@ -67,9 +67,14 @@ public class DragScript : MonoBehaviour {
     private void CastObject() {
         RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 100, itemsLayer);
         if (hit) {
-            selectedItem = hit.collider.gameObject;
-            selectedItem.layer = LayerMask.NameToLayer("SelectedItem");
-            offset = selectedItem.transform.position - Camera.main.ScreenToWorldPoint(mouse.position.ReadValue());
+            // Select the BaseItem to drag
+            selectedItem = hit.collider.gameObject.GetComponent<BaseItem>();
+            if (selectedItem != null) {
+                selectedItem.setIsSelected(true);
+                selectedItem.gameObject.layer = LayerMask.NameToLayer("SelectedItem");
+                offset = selectedItem.transform.position - Camera.main.ScreenToWorldPoint(mouse.position.ReadValue());
+            }
+
         }
     }
 
@@ -78,11 +83,16 @@ public class DragScript : MonoBehaviour {
         if (hit) {
             // Call base item script's merge function
 
-            Debug.Log(hit.collider.gameObject.name);
+            //Debug.Log(hit.collider.gameObject.name);
         }
 
-        if (selectedItem) {
-            selectedItem.layer = LayerMask.NameToLayer("Items");
+        if (selectedItem != null) {
+            selectedItem.setIsSelected(false);
+            selectedItem.gameObject.layer = LayerMask.NameToLayer("Items");
+            if (selectedItem.MergeItem != null) {
+                selectedItem.Merge();
+            }
+
             selectedItem = null;
         }
 

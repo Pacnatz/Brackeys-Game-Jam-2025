@@ -27,7 +27,7 @@ public class Conveyor : MonoBehaviour {
             // If item is not on conveyor
             if (!item.getOnConveyor()) {
                 item.setOnConveyor(true);
-                collision.transform.position = new Vector3(collision.transform.position.x, transform.position.y, collision.transform.position.z);
+                collision.transform.position = new Vector3(collision.transform.position.x, -1.5f, collision.transform.position.z);
                 itemsOnConveyor.Add(item);
             }
 
