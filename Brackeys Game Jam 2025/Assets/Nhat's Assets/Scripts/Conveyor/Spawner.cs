@@ -24,7 +24,6 @@ public class Spawner : MonoBehaviour {
             }
 
         }
-
     }
 
     private void SpawnItem() {

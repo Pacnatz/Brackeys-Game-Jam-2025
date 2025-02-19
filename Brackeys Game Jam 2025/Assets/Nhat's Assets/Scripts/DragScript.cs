@@ -42,22 +42,22 @@ public class DragScript : MonoBehaviour {
         }
 
         // 1D Keyboard logic
-        float moveDirX = playerInput.Player.PlayerMove.ReadValue<float>();
-        if (moveDirX != 0) {
+        float moveDirY = playerInput.Player.PlayerMove.ReadValue<float>();
+        if (moveDirY != 0) {
 
             // Decelerate twice as fast if moving in opposite directions
-            if (playerRb.linearVelocityX > moveDirX) {
-                playerRb.linearVelocityX = Mathf.MoveTowards(playerRb.linearVelocityX, moveDirX * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
+            if (playerRb.linearVelocityY > moveDirY) {
+                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
             }
-            else if (playerRb.linearVelocityX < moveDirX) {
-                playerRb.linearVelocityX = Mathf.MoveTowards(playerRb.linearVelocityX, moveDirX * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
+            else if (playerRb.linearVelocityY < moveDirY) {
+                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
             }
             else {
-                playerRb.linearVelocityX = Mathf.MoveTowards(playerRb.linearVelocityX, moveDirX * playerSpeed, playerAcceleration * Time.deltaTime);
+                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * Time.deltaTime);
             }
         }
         else {
-            playerRb.linearVelocityX = Mathf.MoveTowards(playerRb.linearVelocityX, 0, playerAcceleration * 2 * Time.deltaTime);
+            playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, 0, playerAcceleration * 2 * Time.deltaTime);
         }
 
 

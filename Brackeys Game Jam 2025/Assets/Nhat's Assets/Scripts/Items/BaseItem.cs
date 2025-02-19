@@ -10,12 +10,12 @@ public class BaseItem : MonoBehaviour {
 
     protected bool isSelected = false;
     protected bool onConveyor;
-    private float conveyorPosY = -1.5f;
+    private float conveyorPosX = -4f;
 
 
     private void Update() {
         // Base item can only go as high as conveyorPosY
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -100, conveyorPosY), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8, conveyorPosX), transform.position.y, transform.position.z);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
