@@ -355,6 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232929965}
   - component: {fileID: 232929964}
+  - component: {fileID: 232929966}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -432,6 +433,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232929966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232929963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe26dd23589e9849918abc113ffa92f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MergeItem: {fileID: 0}
+  ItemColor: 
+  OrangeItemPrefab: {fileID: 0}
 --- !u!1 &296390495
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +570,8 @@ MonoBehaviour:
   itemPrefabList:
   - {fileID: 6621763801587813145, guid: b1ee60e853d642b4ea116ad543f67f45, type: 3}
   - {fileID: 3768431459566443151, guid: 1398370aa1668cf46963c457fc660533, type: 3}
+  - {fileID: 6621763801587813145, guid: eac0dbda5bd79094fad9094f42f6be15, type: 3}
+  canSpawn: 1
 --- !u!1 &696081027
 GameObject:
   m_ObjectHideFlags: 0
