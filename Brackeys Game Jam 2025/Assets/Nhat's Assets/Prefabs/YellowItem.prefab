@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0.989607, b: 0, a: 1}
+  m_Color: {r: 0.9963192, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -169,3 +169,5 @@ MonoBehaviour:
   ItemColor: 
   OrangeItemPrefab: {fileID: 3768431459566443151, guid: 4647371ac452fe8489fe360425de04ce, type: 3}
   GreenItemPrefab: {fileID: 3768431459566443151, guid: 0aa29ea7b9aa9064fa10d07aeb7e7dd5, type: 3}
+  LimeItemPrefab: {fileID: 6621763801587813145, guid: a2d2ba97e1dca1445bef4ae819d2cc3b, type: 3}
+  TanItemPrefab: {fileID: 6621763801587813145, guid: 0ea07c8bb96d52a4b8b38b15671a8bc0, type: 3}

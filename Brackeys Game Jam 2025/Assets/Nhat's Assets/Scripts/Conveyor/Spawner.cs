@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour {
 
     private void SpawnItem() {
         int spawnIndex = Random.Range(0, itemPrefabList.Count);
-        GameObject spawnedItem = Instantiate(itemPrefabList[spawnIndex], transform.position - new Vector3(0, 0, 1), Quaternion.identity);
+        GameObject spawnedItem = Instantiate(itemPrefabList[spawnIndex], transform.position - new Vector3(0, 0, 2), Quaternion.identity);
         delay = Random.Range(minDelay, maxDelay);
     }
 }

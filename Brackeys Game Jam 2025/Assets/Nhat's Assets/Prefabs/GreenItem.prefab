@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.15362239, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.09089903, g: 0.5943396, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -167,3 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MergeItem: {fileID: 0}
   ItemColor: 
+  BrownItemPrefab: {fileID: 6621763801587813145, guid: 355af3a94b4622248b06b7ffac43d58f, type: 3}
+  NavyItemPrefab: {fileID: 6621763801587813145, guid: c7e20c03a549f29449d9e7369cf4cff2, type: 3}
+  LimeItemPrefab: {fileID: 6621763801587813145, guid: a2d2ba97e1dca1445bef4ae819d2cc3b, type: 3}
+  OliveItemPrefab: {fileID: 6621763801587813145, guid: 4691398cb4e0b264e80b82d995a637fe, type: 3}

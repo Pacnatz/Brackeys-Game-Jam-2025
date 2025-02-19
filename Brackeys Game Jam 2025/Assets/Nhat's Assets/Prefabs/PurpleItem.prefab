@@ -167,3 +167,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MergeItem: {fileID: 0}
   ItemColor: 
+  TanItemPrefab: {fileID: 6621763801587813145, guid: 0ea07c8bb96d52a4b8b38b15671a8bc0, type: 3}

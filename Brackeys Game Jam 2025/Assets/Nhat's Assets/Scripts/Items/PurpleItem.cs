@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PurpleItem : BaseItem {
 
+    public GameObject TanItemPrefab;
     private void Awake() {
         ItemColor = "Purple";
     }
@@ -12,14 +13,10 @@ public class PurpleItem : BaseItem {
             DestroyBothItems();
         }
         switch (MergeItem.ItemColor) {
-            case "":
-                break;
-            /*
-            case "Blue":
-                Debug.Log("Purple");
+            case "Yellow":
+                Instantiate(TanItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
                 DestroyBothItems();
                 break;
-            */
         }
     }
 

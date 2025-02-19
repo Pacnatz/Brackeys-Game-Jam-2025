@@ -4,6 +4,7 @@ public class RedItem : BaseItem {
 
     public GameObject PurpleItemPrefab;
     public GameObject OrangeItemPrefab;
+    public GameObject BrownItemPrefab;
 
     private void Awake() {
         ItemColor = "Red";
@@ -21,6 +22,10 @@ public class RedItem : BaseItem {
                 break;
             case "Yellow":
                 Instantiate(OrangeItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
+                DestroyBothItems();
+                break;
+            case "Green":
+                Instantiate(BrownItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
                 DestroyBothItems();
                 break;
         }

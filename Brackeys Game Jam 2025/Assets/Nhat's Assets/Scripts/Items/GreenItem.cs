@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class GreenItem : BaseItem {
 
+    public GameObject BrownItemPrefab;
+    public GameObject NavyItemPrefab;
+    public GameObject LimeItemPrefab;
+    public GameObject OliveItemPrefab;
+
     private void Awake() {
         ItemColor = "Green";
     }
@@ -12,14 +17,28 @@ public class GreenItem : BaseItem {
             DestroyBothItems();
         }
         switch (MergeItem.ItemColor) {
-            case "":
-                break;
-            /*
-            case "Blue":
-                Debug.Log("Green");
+            case "Red":
+                Instantiate(BrownItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
                 DestroyBothItems();
                 break;
-            */
+            case "Blue":
+                Instantiate(NavyItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
+                DestroyBothItems();
+                break;
+            case "Yellow":
+                Instantiate(LimeItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
+                DestroyBothItems();
+                break;
+            case "Orange":
+                Instantiate(OliveItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
+                DestroyBothItems();
+                break;
+                /*
+                case "Blue":
+                    Debug.Log("Green");
+                    DestroyBothItems();
+                    break;
+                */
         }
     }
 
