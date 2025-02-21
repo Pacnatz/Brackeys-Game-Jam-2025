@@ -722,23 +722,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3253690802451918292, guid: a7382fa51302808499526aa80868d66a, type: 3}
   projectileSpawn: {fileID: 1064845072}
   hasFired: 0
-  FireAction:
-    m_Name: Fire
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a010cb6b-0595-411a-a652-2ae2a509c319
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 2aea7ae2-6551-4667-bdbc-164ed420ee2b
-      m_Path: <Keyboard>/e
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Fire
-      m_Flags: 0
-    m_Flags: 0
+  FireAction: {fileID: -3366349575389940595, guid: c2caa8a7bcd6ccc4caf3bc9a333169e6, type: 3}
 --- !u!1 &1107011198
 GameObject:
   m_ObjectHideFlags: 0
