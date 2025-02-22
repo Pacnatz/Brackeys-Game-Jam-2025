@@ -201,6 +201,8 @@ MonoBehaviour:
   MergeItem: {fileID: 0}
   ItemColor: 
   highlightCircle: {fileID: 1548724457931778192}
+  damage: 10
+  successChance: 70
   OliveItemPrefab: {fileID: 6621763801587813145, guid: 4691398cb4e0b264e80b82d995a637fe, type: 3}
 --- !u!1 &4569079489140739613
 GameObject:

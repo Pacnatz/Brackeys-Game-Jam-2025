@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class DragScript : MonoBehaviour {
 
     [SerializeField] private Rigidbody2D playerRb;
@@ -97,6 +98,14 @@ public class DragScript : MonoBehaviour {
         }
 
 
+    }
+
+    public void PlayAgain() {
+        playerInput.Player.Disable();
+        SceneManager.LoadScene("Gameplay1");
+    }
+    public void MainMenu() {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

@@ -59,7 +59,18 @@ public class BlueItem : BaseItem {
 
     public override void Merge() {
         if (MergeItem.ItemColor == ItemColor) {
+
+            // Fail / success rate
+            float chance = Random.Range(0, 100);
+            if (chance > successChance) {
+                splashScript.StartSplash(Color.blue);
+            }
+            else {
+                bossScript.TakeDamage(damage, Color.blue);
+
+            }
             DestroyBothItems();
+
         }
         switch (MergeItem.ItemColor) {
             case "Red":

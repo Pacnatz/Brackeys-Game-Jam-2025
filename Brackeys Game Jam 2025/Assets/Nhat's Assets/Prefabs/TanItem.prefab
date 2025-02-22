@@ -201,6 +201,8 @@ MonoBehaviour:
   MergeItem: {fileID: 0}
   ItemColor: 
   highlightCircle: {fileID: 2199956025287293913}
+  damage: 15
+  successChance: 90
 --- !u!1 &8312092594931417609
 GameObject:
   m_ObjectHideFlags: 0

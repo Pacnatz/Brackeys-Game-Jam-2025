@@ -288,3 +288,5 @@ MonoBehaviour:
   MergeItem: {fileID: 0}
   ItemColor: 
   highlightCircle: {fileID: 6343317639912783319}
+  damage: 15
+  successChance: 90

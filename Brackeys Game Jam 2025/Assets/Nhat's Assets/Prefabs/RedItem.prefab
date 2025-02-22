@@ -201,6 +201,8 @@ MonoBehaviour:
   MergeItem: {fileID: 0}
   ItemColor: 
   highlightCircle: {fileID: 5615837449690295043}
+  damage: 5
+  successChance: 50
   PurpleItemPrefab: {fileID: 3768431459566443151, guid: dc6ea2a959bb47b438d269d8b8f84ef0, type: 3}
   OrangeItemPrefab: {fileID: 3768431459566443151, guid: 4647371ac452fe8489fe360425de04ce, type: 3}
   BrownItemPrefab: {fileID: 6621763801587813145, guid: 355af3a94b4622248b06b7ffac43d58f, type: 3}

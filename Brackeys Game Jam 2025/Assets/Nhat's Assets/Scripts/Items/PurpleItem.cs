@@ -51,6 +51,13 @@ public class PurpleItem : BaseItem {
 
     public override void Merge() {
         if (MergeItem.ItemColor == ItemColor) {
+            float chance = Random.Range(0, 100);
+            if (chance > successChance) {
+                splashScript.StartSplash(new Color32(160, 32, 240, 255));
+            }
+            else {
+                bossScript.TakeDamage(damage, new Color32(160, 32, 240, 255));
+            }
             DestroyBothItems();
         }
         switch (MergeItem.ItemColor) {

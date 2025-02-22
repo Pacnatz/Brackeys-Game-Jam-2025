@@ -61,6 +61,15 @@ public class GreenItem : BaseItem {
 
     public override void Merge() {
         if (MergeItem.ItemColor == ItemColor) {
+            float chance = Random.Range(0, 100);
+            if (chance > successChance) {
+                splashScript.StartSplash(Color.green);
+            }
+            else {
+                bossScript.TakeDamage(damage, Color.green);
+
+            }
+
             DestroyBothItems();
         }
         switch (MergeItem.ItemColor) {
@@ -80,12 +89,6 @@ public class GreenItem : BaseItem {
                 Instantiate(OliveItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);
                 DestroyBothItems();
                 break;
-                /*
-                case "Blue":
-                    Debug.Log("Green");
-                    DestroyBothItems();
-                    break;
-                */
         }
     }
 
