@@ -13,7 +13,10 @@ public class DragScript : MonoBehaviour {
 
     private float playerSpeed = 5f;
     private float playerAcceleration = 10f;
+    private float playerMaxHealth = 15f;
+    public float playerCurrentHealth;
 
+    private HealthBarScript healthBarScript;
     private BaseItem selectedItem;
     private Vector3 offset;
     private Vector2 worldPos;
@@ -21,6 +24,7 @@ public class DragScript : MonoBehaviour {
     private void Start() {
         playerInput = new PlayerInput();
         playerInput.Player.Enable();
+        healthBarScript.SetMaxHealth(playerMaxHealth);
     }
 
     private void Update() {
@@ -41,6 +45,9 @@ public class DragScript : MonoBehaviour {
                 selectedItem.transform.position = Camera.main.ScreenToWorldPoint(mouse.position.ReadValue()) + offset;
             }
         }
+
+        // Check if the Player has died this frame.
+        hasDied();
 
         // 1D Keyboard logic
         float moveDirY = playerInput.Player.PlayerMove.ReadValue<float>();
@@ -106,6 +113,16 @@ public class DragScript : MonoBehaviour {
     }
     public void MainMenu() {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    // Damage function for the player.
+    public void hasDied()
+    {
+        if (playerRb == null)
+        {
+            SceneManager.LoadScene("GameOver");
+            playerInput.Player.Disable();
+        }
     }
 
 }

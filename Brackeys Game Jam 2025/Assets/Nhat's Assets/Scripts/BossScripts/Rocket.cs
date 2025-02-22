@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Rocket : MonoBehaviour {
 
-
+    public float rocketDamage = 2.5f;
     public float moveSpeed = 15f;
-
+    
     [SerializeField] private GameObject explosionParticlesPrefab;
     
     private Rigidbody2D rb;
@@ -19,6 +19,10 @@ public class Rocket : MonoBehaviour {
         if (collision.name == "Wall") {
             Instantiate(explosionParticlesPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
+        }
+        if (collision.name == "Player")
+        {
+            Destroy(collision.gameObject);
         }
     }
 }
