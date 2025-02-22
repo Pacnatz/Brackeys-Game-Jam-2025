@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
 {
+
+    public float damage = 0.5f;
     public float speed = 10.0f;
     Rigidbody2D rb;
-
+    Boss boss;
 
     private void Awake()
     {
@@ -28,5 +30,5 @@ public class ProjectileScript : MonoBehaviour
         rb.AddForce(gameObject.transform.right * speed * Time.deltaTime);
         
     }
-    
+
 }

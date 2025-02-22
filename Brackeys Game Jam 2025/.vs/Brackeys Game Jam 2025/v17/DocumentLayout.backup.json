@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\assets\\nhat\u0027s assets\\scripts\\projectile\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|e:\\github_stuff\\brackeys-game-jam-2025\\brackeys game jam 2025\\assets\\nhat\u0027s assets\\scripts\\healthbar\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|solutionrelative:assets\\nhat\u0027s assets\\scripts\\healthbar\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|e:\\github_stuff\\brackeys-game-jam-2025\\brackeys game jam 2025\\assets\\nhat\u0027s assets\\scripts\\projectile\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|solutionrelative:assets\\nhat\u0027s assets\\scripts\\projectile\\projectilescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|e:\\github_stuff\\brackeys-game-jam-2025\\brackeys game jam 2025\\assets\\nhat\u0027s assets\\scripts\\projectile\\shootscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\assets\\nhat\u0027s assets\\scripts\\projectile\\shootscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E377A421-55A7-2312-3F6B-AFBE46889083}|Assembly-CSharp.csproj|solutionrelative:assets\\nhat\u0027s assets\\scripts\\projectile\\shootscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "HealthBarScript.cs",
+              "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\HealthBar\\HealthBarScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\HealthBar\\HealthBarScript.cs",
+              "ToolTip": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\HealthBar\\HealthBarScript.cs",
+              "RelativeToolTip": "Assets\\Nhat\u0027s Assets\\Scripts\\HealthBar\\HealthBarScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T21:04:58.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ShootScript.cs",
               "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\Projectile\\ShootScript.cs",
               "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\Projectile\\ShootScript.cs",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Assets\\Nhat\u0027s Assets\\Scripts\\Projectile\\ShootScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T02:29:52.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T02:29:52.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "OrangeItem.cs",
               "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\Items\\OrangeItem.cs",
               "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\Items\\OrangeItem.cs",
@@ -55,12 +71,11 @@
               "RelativeToolTip": "Assets\\Nhat\u0027s Assets\\Scripts\\Items\\OrangeItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T01:55:24.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T01:55:24.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProjectileScript.cs",
               "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\Projectile\\ProjectileScript.cs",
               "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\Projectile\\ProjectileScript.cs",
@@ -73,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\MainMenu.cs",
@@ -85,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DragScript.cs",
               "DocumentMoniker": "E:\\GitHub_Stuff\\Brackeys-Game-Jam-2025\\Brackeys Game Jam 2025\\Assets\\Nhat\u0027s Assets\\Scripts\\DragScript.cs",
               "RelativeDocumentMoniker": "Assets\\Nhat\u0027s Assets\\Scripts\\DragScript.cs",
