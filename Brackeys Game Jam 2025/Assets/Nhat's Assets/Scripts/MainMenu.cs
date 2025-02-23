@@ -24,4 +24,5 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Load gameplay");
         SceneManager.LoadScene(Gameplay1_Scene);
     }
+
 }

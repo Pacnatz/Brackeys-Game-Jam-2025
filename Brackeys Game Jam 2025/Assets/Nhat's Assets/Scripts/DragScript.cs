@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -11,8 +10,8 @@ public class DragScript : MonoBehaviour {
     private PlayerInput playerInput;
     private Mouse mouse;
 
-    private float playerSpeed = 5f;
-    private float playerAcceleration = 10f;
+    private float playerSpeed = 7f;
+    private float playerAcceleration = 14f;
     public float playerCurrentHealth;
 
     private BaseItem selectedItem;
