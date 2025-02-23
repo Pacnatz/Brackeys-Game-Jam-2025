@@ -13,10 +13,8 @@ public class DragScript : MonoBehaviour {
 
     private float playerSpeed = 5f;
     private float playerAcceleration = 10f;
-    private float playerMaxHealth = 15f;
     public float playerCurrentHealth;
 
-    private HealthBarScript healthBarScript;
     private BaseItem selectedItem;
     private Vector3 offset;
     private Vector2 worldPos;
@@ -24,7 +22,6 @@ public class DragScript : MonoBehaviour {
     private void Start() {
         playerInput = new PlayerInput();
         playerInput.Player.Enable();
-        healthBarScript.SetMaxHealth(playerMaxHealth);
     }
 
     private void Update() {
@@ -46,27 +43,30 @@ public class DragScript : MonoBehaviour {
             }
         }
 
-        // Check if the Player has died this frame.
-        hasDied();
 
         // 1D Keyboard logic
-        float moveDirY = playerInput.Player.PlayerMove.ReadValue<float>();
-        if (moveDirY != 0) {
+        var playerTransform = playerRb.gameObject.transform;
+        playerTransform.position = new Vector3(playerTransform.position.x, Mathf.Clamp(playerTransform.position.y, -4.5f, 4.5f), playerTransform.position.z);
+        if (playerRb) {
+            float moveDirY = playerInput.Player.PlayerMove.ReadValue<float>();
+            if (moveDirY != 0) {
 
-            // Decelerate twice as fast if moving in opposite directions
-            if (playerRb.linearVelocityY > moveDirY) {
-                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
-            }
-            else if (playerRb.linearVelocityY < moveDirY) {
-                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
+                // Decelerate twice as fast if moving in opposite directions
+                if (playerRb.linearVelocityY > moveDirY) {
+                    playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
+                }
+                else if (playerRb.linearVelocityY < moveDirY) {
+                    playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * 2 * Time.deltaTime);
+                }
+                else {
+                    playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * Time.deltaTime);
+                }
             }
             else {
-                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, moveDirY * playerSpeed, playerAcceleration * Time.deltaTime);
+                playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, 0, playerAcceleration * 2 * Time.deltaTime);
             }
         }
-        else {
-            playerRb.linearVelocityY = Mathf.MoveTowards(playerRb.linearVelocityY, 0, playerAcceleration * 2 * Time.deltaTime);
-        }
+
 
 
     }
@@ -115,14 +115,6 @@ public class DragScript : MonoBehaviour {
         SceneManager.LoadScene("MainMenu");
     }
 
-    // Damage function for the player.
-    public void hasDied()
-    {
-        if (playerRb == null)
-        {
-            SceneManager.LoadScene("GameOver");
-            playerInput.Player.Disable();
-        }
-    }
+
 
 }

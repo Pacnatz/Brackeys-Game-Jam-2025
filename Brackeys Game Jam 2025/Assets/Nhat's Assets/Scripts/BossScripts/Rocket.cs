@@ -24,7 +24,13 @@ public class Rocket : MonoBehaviour {
         }
         if (collision.name == "Player")
         {
-            Destroy(collision.gameObject);
+            collision.TryGetComponent<Player>(out var player);
+            Instantiate(explosionParticlesPrefab, transform.position, Quaternion.identity);
+            FindFirstObjectByType<AudioManager>().Play("RocketImpact");
+            player.TakeDamage(rocketDamage);
+            Destroy(gameObject);
+
+
         }
     }
 }

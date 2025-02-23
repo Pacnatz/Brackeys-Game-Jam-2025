@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -83,11 +84,12 @@ public class Boss : MonoBehaviour
 
         if (health <= 0) {
             // Death logic
-            gameOverScreen.SetActive(true);
             FindFirstObjectByType<AudioManager>().Play("GameOverSound");
-            Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
     }
+
+
 
     private IEnumerator BeginBoss(float delay) {
         yield return new WaitForSeconds(delay);
