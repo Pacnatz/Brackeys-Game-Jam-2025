@@ -59,19 +59,29 @@ public class BlueItem : BaseItem {
 
     public override void Merge() {
         if (MergeItem.ItemColor == ItemColor) {
-
+            
             // Fail / success rate
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
                 splashScript.StartSplash(Color.blue);
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
             }
             else {
                 bossScript.TakeDamage(damage, Color.blue);
-
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
             }
             DestroyBothItems();
+            
 
         }
+
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
         switch (MergeItem.ItemColor) {
             case "Red":
                 Instantiate(PurpleItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);

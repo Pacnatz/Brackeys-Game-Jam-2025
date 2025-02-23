@@ -20,6 +20,7 @@ public class RedItem : BaseItem {
                     if (CheckMerge(selectedItem)) {
                         selectedItem.MergeItem = this;
                         highlightCircle.SetActive(true);
+                        
                     }
                 }
             }
@@ -58,15 +59,27 @@ public class RedItem : BaseItem {
 
     public override void Merge() {
         if (MergeItem.ItemColor == ItemColor) {
+            
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
                 splashScript.StartSplash(Color.red);
             }
             else {
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
                 bossScript.TakeDamage(damage, Color.red);
             }
             DestroyBothItems();
+            
         }
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
+
         switch (MergeItem.ItemColor) {
             case "Blue":
                 Instantiate(PurpleItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);

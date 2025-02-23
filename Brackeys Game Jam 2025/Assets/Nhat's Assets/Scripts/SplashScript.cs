@@ -10,6 +10,7 @@ public class SplashScript : MonoBehaviour {
     private void Awake() {
         mat = GetComponent<SpriteRenderer>().material;
         mat.SetFloat("_AlphaValue", 0);
+        
     }
 
     private void Update() {
@@ -27,6 +28,7 @@ public class SplashScript : MonoBehaviour {
     }
 
     public void StartSplash(Color color) {
+   
         mat.SetColor("_SplashColor", color);
         splashOnScreen = true;
         alphaValue = 1;

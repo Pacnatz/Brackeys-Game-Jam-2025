@@ -63,13 +63,24 @@ public class YellowItem : BaseItem {
         if (MergeItem.ItemColor == ItemColor) {
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
                 splashScript.StartSplash(Color.yellow);
             }
             else {
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
                 bossScript.TakeDamage(damage, Color.yellow);
             }
             DestroyBothItems();
+            
         }
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
+
         switch (MergeItem.ItemColor) {
             case "Red":
                 Instantiate(OrangeItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);

@@ -51,12 +51,23 @@ public class NavyItem : BaseItem {
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
                 splashScript.StartSplash(new Color32(0, 0, 128, 255));
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
             }
             else {
                 bossScript.TakeDamage(damage, new Color32(0, 0, 128, 255));
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
             }
             DestroyBothItems();
+            
         }
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
+
         switch (MergeItem.ItemColor) {
             case "":
                 break;

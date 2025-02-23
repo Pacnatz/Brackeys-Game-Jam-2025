@@ -51,16 +51,28 @@ public class OrangeItem : BaseItem {
     }
 
     public override void Merge() {
+        //bool audioPlayed = false;
         if (MergeItem.ItemColor == ItemColor) {
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
                 splashScript.StartSplash(new Color32(255, 165, 0, 255));
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
+                //audioPlayed = true;
             }
             else {
                 bossScript.TakeDamage(damage, new Color32(255, 165, 0, 255));
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
+                //audioPlayed = true;
             }
+            
             DestroyBothItems();
+            
         }
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
         switch (MergeItem.ItemColor) {
             case "Green":
                 Instantiate(OliveItemPrefab, MergeItem.gameObject.transform.position, Quaternion.identity);

@@ -15,6 +15,7 @@ public class BaseItem : MonoBehaviour {
 
     protected bool isSelected = false;
     protected bool onConveyor;
+    
     private float conveyorPosX = -4f;
 
 
@@ -32,12 +33,15 @@ public class BaseItem : MonoBehaviour {
 
     public virtual void Merge() {
         // What each individual color will override
+        
     }
 
     protected void DestroyBothItems() {
-        Destroy(MergeItem.gameObject);
-        Destroy(gameObject);
+            
+            Destroy(MergeItem.gameObject);
+            Destroy(gameObject);
     }
+ 
 
     public bool getOnConveyor() => onConveyor;
     public void setOnConveyor(bool val) { onConveyor = val; }

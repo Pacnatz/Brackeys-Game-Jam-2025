@@ -22,6 +22,7 @@ public class ProjectileScript : MonoBehaviour
     private void Start()
     {
         rb.linearVelocity = gameObject.transform.right * speed;
+        
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

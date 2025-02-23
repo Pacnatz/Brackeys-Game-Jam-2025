@@ -54,9 +54,18 @@ public class OliveItem : BaseItem {
             }
             else {
                 bossScript.TakeDamage(damage, new Color32(184, 184, 108, 255));
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
             }
             DestroyBothItems();
+            
         }
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
         switch (MergeItem.ItemColor) {
             case "":
                 break;

@@ -50,13 +50,24 @@ public class TanItem : BaseItem {
         if (MergeItem.ItemColor == ItemColor) {
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
                 splashScript.StartSplash(new Color32(210, 180, 140, 255));
             }
             else {
                 bossScript.TakeDamage(damage, new Color32(210, 180, 140, 255));
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
             }
             DestroyBothItems();
+            
         }
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
+
         switch (MergeItem.ItemColor) {
             case "":
                 break;

@@ -84,6 +84,7 @@ public class Boss : MonoBehaviour
         if (health <= 0) {
             // Death logic
             gameOverScreen.SetActive(true);
+            FindFirstObjectByType<AudioManager>().Play("GameOverSound");
             Destroy(gameObject);
         }
     }

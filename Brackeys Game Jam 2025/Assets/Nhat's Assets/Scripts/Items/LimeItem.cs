@@ -50,13 +50,24 @@ public class LimeItem : BaseItem {
         if (MergeItem.ItemColor == ItemColor) {
             float chance = Random.Range(0, 100);
             if (chance > successChance) {
+                FindFirstObjectByType<AudioManager>().Play("SplatAudio");
                 splashScript.StartSplash(new Color32(0, 255, 0, 255));
             }
             else {
                 bossScript.TakeDamage(damage, new Color32(0, 255, 0, 255));
+                FindFirstObjectByType<AudioManager>().Play("DamageAudio");
             }
             DestroyBothItems();
+            
         }
+
+
+        else
+        {
+            FindFirstObjectByType<AudioManager>().Play("CombinationAudio");
+        }
+
+
         switch (MergeItem.ItemColor) {
             case "":
                 break;
