@@ -619,6 +619,7 @@ MonoBehaviour:
   selectedItemLayer:
     serializedVersion: 2
     m_Bits: 128
+  playerCurrentHealth: 0
 --- !u!1 &149772962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,19 +1911,19 @@ MonoBehaviour:
   sounds:
   - name: RocketBlast
     loop: 0
-    audioClip: {fileID: 8300000, guid: de812cfb519929c4aad9d296f655c81d, type: 3}
+    audioClip: {fileID: 8300000, guid: a485b7d19a89f2347bec4d251e4cd945, type: 3}
     volume: 0.1
     pitch: 1
     audioSource: {fileID: 0}
   - name: RocketImpact
     loop: 0
-    audioClip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+    audioClip: {fileID: 8300000, guid: a3c00c77218c0e54eb3d64b0e22350ff, type: 3}
     volume: 0.1
     pitch: 1
     audioSource: {fileID: 0}
   - name: BackgroundMusic
     loop: 1
-    audioClip: {fileID: 8300000, guid: b4039b80516a1b6458468b4949a95710, type: 3}
+    audioClip: {fileID: 8300000, guid: a13ad8b8c6774b241b0b4a296d2a9bad, type: 3}
     volume: 0.04
     pitch: 1
     audioSource: {fileID: 0}

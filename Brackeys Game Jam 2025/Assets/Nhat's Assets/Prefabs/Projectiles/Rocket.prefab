@@ -198,5 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e513cdfce55e8614696bb5f252d63993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocketDamage: 2.5
   moveSpeed: 15
   explosionParticlesPrefab: {fileID: 3332502072945515166, guid: 188f562a9fe95b3479494751f4f629c9, type: 3}
